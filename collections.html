@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ansible collections | Ansible Documentation</title>
+    <meta name="description" content="Ansible Documentation" />
+    <meta name="author" content="Ansible Community" />
+    <link rel="canonical" href="https://docs.ansible.com/ansible_community.html"/>
+    <link rel="stylesheet"
+      href="https://static.redhat.com/libs/redhat/redhat-font/2.0.0/webfonts/red-hat-font.css"/>
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://docs.ansible.com/static/css/styles.min.css"/>
+    <link rel="stylesheet" href="https://docs.ansible.com/static/css/main.css">
+    <link rel="stylesheet" href="https://docs.ansible.com/static/css/redhat-footer.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md p-1">
+  <div class="container">
+    <a href="https://docs.ansible.com/">
+      <span class="navbar-brand d-flex justify-content-center">
+        <svg version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="28"
+          height="28"
+          viewBox="0 0 28 28"
+          style="enable-background: new 0 0 28 28"
+          xml:space="preserve"
+          class="mr-1">
+          <style type="text/css">
+            .ansHeader {
+              fill: #ffffff;
+            }
+          </style>
+          <circle class="ansHeader" cx="14" cy="14" r="13.5" />
+          <path
+            d="M20.4,19.3L15,6.4c-0.2-0.4-0.5-0.6-0.8-0.6c-0.4,0-0.7,0.2-0.9,0.6L7.5,20.6h2l2.3-5.8l7,5.6c0.3,0.2,0.5,0.3,0.7,0.3c0.5,0,1-0.4,1-1C20.5,19.6,20.4,19.5,20.4,19.3z M14.2,8.7l3.5,8.6l-5.3-4.1L14.2,8.7z"/>
+        </svg>
+        Ansible documentation
+      </span>
+    </a>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#main-menu"
+      aria-controls="main-menu"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar top"></span>
+      <span class="icon-bar center"></span>
+      <span class="icon-bar bottom"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="main-menu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.ansible.com/products/automation-platform">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.ansible.com/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.ansible.com/community">Community</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.ansible.com/resources/webinars-training">Webinars and training</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.redhat.com/en/technologies/management/ansible/try-it">Try it now</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <nav class="navbar navbar-expand-md p-1 docbar">
+  <div class="container">
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#sub-menu"
+      aria-controls="sub-menu"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar top"></span>
+      <span class="icon-bar center"></span>
+      <span class="icon-bar bottom"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="sub-menu">
+      <ul class="navbar-nav mx-auto p-0">
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.ansible.com/community.html">Join the community</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.ansible.com/users.html">Users</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.ansible.com/developers.html">Developers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.ansible.com/maintainers.html">Maintainers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.ansible.com/core.html">Ansible core</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.ansible.com/ecosystem.html">Ansible ecosystem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://docs.ansible.com/platform.html">Red Hat Ansible Automation Platform</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- <div class="container">
+  <div class="grid-wrapper">
+    <div class="width-12-12 width-12-12-m">
+      <div class="ansible-banner">
+        <div class="ansible-banner-text">
+          <p>
+            <a href="https://www.redhat.com/en/summit?sc_cid=RHCTG1250000442936" target="_blank">Join AnsibleFest at Red Hat Summit!</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+    
+<div class="container">
+  <div class="full-width-bg component">
+    <div class="grid-wrapper">
+      <div class="width-3-12 width-12-12-m">
+        <img class="page-logo" src="https://docs.ansible.com/static/images/community_logo.svg">
+      </div>
+      <div class="width-9-12 width-12-12-m">
+        <div class="page-title">
+          <h2>Ansible collections</h2>
+          <p>Collections are a distribution format for Ansible content that can include playbooks, roles, modules, and plugins.</p>
+        </div>
+      </div>
+      <div class="width-12-12 width-12-12-m">
+        <p>Ansible plugins and modules are available from collections. If you are looking for documentation related to a plugin or module, please try one of the following links. If you were redirected to this page from an older version of the Ansible documentation, please also consider updating your bookmarks.</p>
+        <ul class="fa-ul">
+          <li>
+            <span class="fa-li"><i class="fas fa-book"></i></span>
+            <a href="https://docs.ansible.com/ansible/latest/collections/index.html" target="_blank">Collection index</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-book"></i></span>
+            <a href="https://docs.ansible.com/ansible/latest/collections/all_plugins.html" target="_blank">Modules and plugins index</a>
+          </li>
+          <li>
+            <span class="fa-li"><i class="fas fa-book"></i></span>
+            <a href="https://docs.ansible.com/ansible/latest/collections/ansible/builtin/index.html" target="_blank">Index of all modules and plugins contained in ansible-core</a>
+          </li>
+        </ul>
+      </div>
+      <div class="width-12-12 width-12-12-m">
+        <h3>Ansible Galaxy</h3>
+        <p>You can also find lots of collections&nbsp;<a href="https://galaxy.ansible.com/search" target="_blank">by searching on Ansible Galaxy.</a></p>
+        <p>Use these popular search keywords to find tips and tools to automate everyday tasks, from provisioning infrastructure to deploying applications.</p>
+      </div>
+      <div class="width-6-12 width-12-12-m">
+        <ul class="fa-ul">
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=system" target="_blank">System</a>
+          </li>
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=development" target="_blank">Development</a>
+          </li>
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=networking" target="_blank">Networking</a>
+          </li>
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=cloud" target="_blank">Cloud</a>
+          </li>
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=database" target="_blank">Database</a>
+          </li>
+        </ul>
+      </div>
+      <div class="width-6-12 width-12-12-m">
+        <ul class="fa-ul">
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=monitoring" target="_blank">Monitoring</a>
+          </li>
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=packaging" target="_blank">Packaging</a>
+          </li>
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=apb" target="_blank">Playbook bundles</a>
+          </li>
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=security" target="_blank">Security</a>
+          </li>
+          <li>
+            <a href="https://galaxy.ansible.com/ui/search/?keywords=web" target="_blank">Web</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="content-slim redhat-footer">
+  <span class="licence">
+    <i class="fab fa-creative-commons"></i><i class="fab fa-creative-commons-by"></i> <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0 |</a>
+    <a href="https://www.redhat.com/en/about/privacy-policy">Privacy policy |</a>
+  </span>
+  <span class="redhat">
+    Sponsored by
+  </span>
+  <span class="redhat-logo">
+    <a href="https://www.redhat.com/" target="_blank"><img src="https://docs.ansible.com/static/images/redhat_reversed.svg" alt="Red Hat logo"></a>
+  </span>
+</div>
+    <script src="https://docs.ansible.com/static/js/iframeResizer.min.js" type="javascript"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://www.redhat.com/dtm.js"></script>
+  </body>
+</html>
