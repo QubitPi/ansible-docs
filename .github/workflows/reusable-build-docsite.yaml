@@ -2,6 +2,10 @@ name: Build the Ansible docsite
 
 on:
   workflow_call:
+  pull_request:
+  push:
+    branches:
+      - master
 
 env:
   PIP_DISABLE_PIP_VERSION_CHECK: 1
@@ -23,9 +27,12 @@ jobs:
           PYTHONWARNINGS: >-  # pip vendors deprecated `setuptools`' `pkg_resources`
             error,once:pkg_resources is deprecated as an API.:DeprecationWarning:pip._internal.metadata.importlib._envs
         run: python -Im nox -s build
-      - name: Create a downloadable archive of docs build
-        uses: actions/upload-artifact@v4
+      - name: Deploy documentation to GitHub Pages
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4.0.0
         with:
-          name: docsite-html-assets
-          path: output/**
-          retention-days: 7
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: output
+          enable_jekyll: false
+          user_name: QubitPi
+          user_email: jack20220723@gmail.com
+          cname: ansible.qubitpi.org
